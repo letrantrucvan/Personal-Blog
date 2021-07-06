@@ -1,0 +1,29 @@
+{
+  "kind": "collectionType",
+  "collectionName": "stadiums",
+  "info": {
+    "name": "stadium",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "internal_id": {
+      "type": "string"
+    },
+    "name": {
+      "type": "string"
+    },
+    "slug": {
+      "type": "string"
+    },
+    "teams": {
+      "via": "stadium",
+      "collection": "team"
+    }
+  }
+}

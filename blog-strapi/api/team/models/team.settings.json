@@ -1,0 +1,38 @@
+{
+  "kind": "collectionType",
+  "collectionName": "teams",
+  "info": {
+    "name": "team",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Short_name": {
+      "type": "string"
+    },
+    "Full_name": {
+      "type": "text"
+    },
+    "Id": {
+      "type": "biginteger"
+    },
+    "Slug": {
+      "type": "string"
+    },
+    "Created_at": {
+      "type": "datetime"
+    },
+    "Updated_at": {
+      "type": "datetime"
+    },
+    "stadium": {
+      "model": "stadium",
+      "via": "teams"
+    }
+  }
+}
